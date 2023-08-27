@@ -16,7 +16,7 @@ exports.myBlogs = async(req,res)=>{
 
 
         //check if blog exists or not
-        const blogExist = await Blog.find(({userId:userId}));
+        const blogExist = await Blog.find(({userId:userId})).populate('userId','name');
 
         if(!blogExist){
             return res.status(404).json({

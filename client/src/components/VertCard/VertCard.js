@@ -49,6 +49,17 @@ function VertCard(props) {
               Read
             </Button>
           </CardActions>
+          <Typography
+            gutterBottom
+            variant="subtitle1" // Change variant to "subtitle1" for smaller font size
+            sx={{
+              color: 'grey', // Use the appropriate color value
+              textAlign: 'right', // Align text to the right
+              marginTop: 'auto', // Push text to the bottom of the container
+            }}
+          >
+            {"- " +props.post.userId.name}
+          </Typography>
         </CardContent>
       </CardActionArea>
     </Card>

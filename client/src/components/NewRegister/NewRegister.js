@@ -32,6 +32,7 @@ function NewRegister() {
         }
         catch(er){
           console.log(er);
+          alert('error occured, make sure all the fields are filled correctly');
         }
       }
   

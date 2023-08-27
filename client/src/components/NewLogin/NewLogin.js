@@ -41,7 +41,7 @@ function NewLogin() {
           // Handle the error from the server
           console.error('Error logging in:', error);
           // Display an error message to the user
-          alert('An error occurred while logging in. Please try again later.');
+          alert('error occured, make sure all the fields are filled correctly');
         }
       }
 

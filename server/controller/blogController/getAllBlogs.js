@@ -5,7 +5,7 @@ exports.getAllBlogs = async(req,res)=>{
     try{
 
         //check if blog exists or not
-        const blogs = await Blog.find({});
+        const blogs = await Blog.find({}).populate('userId','name');
 
         if(!blogs){
             return res.status(404).json({
