@@ -37,7 +37,7 @@ function Front() {
       useEffect(() => {
         const fetchData = async () => {
             try {
-                const url = 'http://localhost:3001/api/v1/myBlogs';
+                const url = 'https://blog-website-api-theta.vercel.app/api/v1/myBlogs';
                 
                 const response = await axios.get(url, {
                     params: {
