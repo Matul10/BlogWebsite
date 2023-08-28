@@ -25,7 +25,7 @@ function NewRegister() {
     }
     async function handleRegister (){
         try{
-          const url='http://localhost:3001/api/v1/register';
+          const url='https://blog-website-api-theta.vercel.app/api/v1/register';
           const res= await axios.post(url,data);
           navigate('/login')
           console.log(res);
