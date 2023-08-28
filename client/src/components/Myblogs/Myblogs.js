@@ -22,7 +22,7 @@ function Myblogs() {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const url = 'http://localhost:3001/api/v1/myBlogs';
+                const url = 'https://blog-website-api-theta.vercel.app/api/v1/myBlogs';
                 const userId = localStorage.getItem('userId'); // Replace with your method of getting the userId
                 const response = await axios.get(url, {
                     params: {
