@@ -33,7 +33,7 @@ function EditModal(props) {
 
   async function handleSubmit() {
     try {
-      const url = 'http://localhost:3001/api/v1/updateBlog';
+      const url = 'https://blog-website-api-theta.vercel.app/api/v1/updateBlog';
       const res = await axios.put(url, data);
       
 
