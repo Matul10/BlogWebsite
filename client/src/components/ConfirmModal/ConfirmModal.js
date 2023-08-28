@@ -14,7 +14,7 @@ function ConfirmModal(props) {
   const handleAgree = async() => {
 
     try {
-      const url = 'http://localhost:3001/api/v1/deleteBlog';
+      const url = 'https://blog-website-api-theta.vercel.app/api/v1/deleteBlog';
       const res = await axios.delete(url, {
         params:{
           blogId:blogId
