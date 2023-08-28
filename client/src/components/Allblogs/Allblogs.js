@@ -28,7 +28,7 @@ function Allblogs() {
 
         const fetchData = async () => {
             try {
-                const url = 'http://localhost:3001/api/v1/getAllBlogs';
+                const url = 'https://blog-website-api-theta.vercel.app/api/v1/getAllBlogs';
                 // Replace with your method of getting the userId
                 const userId = localStorage.getItem('userId'); 
                 const response = await axios.get(url, {
