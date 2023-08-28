@@ -24,7 +24,7 @@ function Login() {
 
   async function handleLogin() {
     try {
-      const url = 'http://localhost:3001/api/v1/login';
+      const url = 'https://blog-website-api-theta.vercel.app/api/v1/login';
       const res = await axios.post(url, data);
       localStorage.setItem('token', res.data.token);
       localStorage.setItem('userId', res.data.userId);
