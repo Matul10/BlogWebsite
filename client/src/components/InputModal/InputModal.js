@@ -29,7 +29,7 @@ function InputModal(props) {
 
   async function handleSubmit() {
     try {
-      const url = 'http://localhost:3001/api/v1/createBlog';
+      const url = 'https://blog-website-api-theta.vercel.app/api/v1/createBlog';
       const res = await axios.post(url, data);
       console.log(res);
 
