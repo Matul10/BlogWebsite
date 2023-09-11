@@ -18,7 +18,7 @@ app.use('/api/v1',routes);
 
 
 //port connection
-const port= process.env.PORT_NO || 3001;
+const port= process.env.PORT || 3001;
 app.listen(port,()=>{
     console.log('listening on port'+port);
 })
